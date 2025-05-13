@@ -1,18 +1,11 @@
-import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import requests
 import streamlit as st
-import numpy as np
-from io import BytesIO
-import matplotlib.pyplot as plt
-from numpy.random import rand
-import plotly.express as px
-from numpy.random import rand
-from PIL import Image
 import pandas as pd
 
-load_dotenv()
-API_key = os.getenv('api_key_weathermap')
+#load_dotenv()
+#API_key = os.getenv('api_key_weathermap')
+API_key = st.secrets["API_key_weather"]
 
 st.title('Che tempo fa?')
 
