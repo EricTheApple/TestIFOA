@@ -5,6 +5,11 @@ import requests
 from io import BytesIO
 import matplotlib.pyplot as plt
 from numpy.random import rand
+import plotly.express as px
+#import matplotlib.pyplot as plt 
+from numpy.random import rand
+from PIL import Image
+
 
 ##MATERIALE PROF
 st.title('MIE PROVE E APPUNTI')
@@ -54,9 +59,6 @@ st.pyplot(fig)
 
 ##MATERIALE PROF
 st.title('MATERIALE PROF')
-
-import streamlit as st
-
 
 st.text("""
         bye 
@@ -115,7 +117,6 @@ st.title('La mia prima App in python')
 
 # # # # # #####################################################
 # # # # ### the one
-from PIL import Image
 
 image = Image.open('memeindiano.jpg')
 st.image(image, caption='I am a indian bold guy!!!',width=400)
@@ -159,8 +160,6 @@ add_selectbox = st.sidebar.radio(
 
 # # # # # ##################################################
 # # # # ############## Plot ############################
-import matplotlib.pyplot as plt 
-from numpy.random import rand
 
 fig = plt.figure(figsize=(18,10)) 
 plt.scatter([1,2,3,4,5],[1,2,3,4,5])
@@ -187,7 +186,6 @@ if st.button('result'):
     st.success('setosa')
 # # # #########################################################
 
-import plotly.express as px
 
 st.subheader("Define a custom colorscale")
 df = px.data.iris()
