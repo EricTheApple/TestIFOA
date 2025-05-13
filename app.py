@@ -6,7 +6,6 @@ from io import BytesIO
 import matplotlib.pyplot as plt
 from numpy.random import rand
 import plotly.express as px
-#import matplotlib.pyplot as plt 
 from numpy.random import rand
 from PIL import Image
 
