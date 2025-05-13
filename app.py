@@ -46,7 +46,7 @@ st.image(i)
 
 
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from numpy.random import rand
 
 fig = plt.figure(figsize=(5,5))
@@ -242,5 +242,3 @@ def show_footer():
                 [Linkedin](https://www.linkedin.com/in/daniele-grotti-38681146/).""")
 
 show_footer()
-
-#mammt
