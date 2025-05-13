@@ -117,7 +117,7 @@ st.title('La mia prima App in python')
 # # # # # #####################################################
 # # # # ### the one
 
-image = Image.open('memeindiano.jpg')
+#image = Image.open('memeindiano.jpg')
 st.image(image, caption='I am a indian bold guy!!!',width=400)
 
 # # # # # ######################################################
