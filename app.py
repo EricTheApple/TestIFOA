@@ -1,10 +1,10 @@
-import streamlit
-
 import streamlit as st
 import numpy as np
 from PIL import Image
 import requests
 from io import BytesIO
+import matplotlib.pyplot as plt
+from numpy.random import rand
 
 ##MATERIALE PROF
 st.title('MIE PROVE E APPUNTI')
@@ -43,11 +43,6 @@ st.write(f"Perimetro = {Perimetro}")
 response = requests.get(url="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202106/cover4_new_1200x768.jpeg?size=1200:675")
 i = Image.open(BytesIO(response.content))
 st.image(i)
-
-
-
-#import matplotlib.pyplot as plt
-from numpy.random import rand
 
 fig = plt.figure(figsize=(5,5))
 plt.axis([-10,50,-10,50])
